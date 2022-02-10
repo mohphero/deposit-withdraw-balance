@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-5xl mt-10">
+        Lets get <span class="font-semibold text-purple-600">some money</span>
+      </h1>
+    </header>
+    <main>
+      <section class="w-3/4 p-8 mx-auto mt-8">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-emerald-400 p-5 text-white text-2xl">
+            <p>Deposit</p>
+            <p>$ <span id="deposit">000</span></p>
+          </div>
+          <div class="bg-rose-400 p-5 text-white text-2xl">
+            <p>Withdraw</p>
+            <p>$ <span id="withdraw">000</span></p>
+          </div>
+          <div class="bg-violet-400 p-5 text-white text-2xl">
+            <p>Balance</p>
+            <p>$ <span id="balance">000</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="w-2/4 gap-4 mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-emerald-600 p-5">
+            <input
+              type="text"
+              id="depositInput"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="$ Please enter your deposit amount"
+            />
+            <button
+              id="depositSubmit"
+              class="bg-green-500 hover:bg-green-800 text-white font-bold py-2 px-4 rounded w-full mt-3"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-rose-600 p-5">
+            <input
+              type="text"
+              id="withdrawInput"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="$ Please enter your withdraw amount"
+            />
+            <button
+              id="withdrawSubmit"
+              class="bg-red-400 hover:bg-red-800 text-white font-bold py-2 px-4 rounded w-full mt-3"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
